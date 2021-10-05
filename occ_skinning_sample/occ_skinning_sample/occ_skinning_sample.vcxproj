@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{D8E2FDFD-1BB4-4014-B44D-8D707E3B0E4A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>occskinningsample</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\OCCT\OCCT-install\inc\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\OCCT\OCCT-install\win64\vc14\libd;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>C:\OCCT\OCCT-install\win64\vc14\libd\TKernel.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKMath.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKG2d.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKG3d.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKGeomBase.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKBRep.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKGeomAlgo.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKTopAlgo.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKPrim.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKBO.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKShHealing.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKBool.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKHLR.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKFillet.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKOffset.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKFeat.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKMesh.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKXMesh.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKService.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKV3d.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKOpenGl.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKMeshVS.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKIVtk.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKCDF.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKLCAF.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKCAF.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKBinL.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKXmlL.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKBin.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKXml.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKStdL.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKStd.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKTObj.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKBinTObj.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKXmlTObj.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKVCAF.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKXSBase.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKSTEPBase.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKSTEPAttr.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKSTEP209.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKSTEP.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKIGES.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKXCAF.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKXDEIGES.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKXDESTEP.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKSTL.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKVRML.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKXmlXCAF.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKBinXCAF.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKRWMesh.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKDraw.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKTopTest.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKOpenGlTest.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKViewerTest.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKXSDRAW.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKDCAF.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKXDEDRAW.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKTObjDRAW.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKQADraw.lib;C:\OCCT\OCCT-install\win64\vc14\libd\TKIVtkDraw.lib;TKPrim.lib;TKTopAlgo.lib;TKernel.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Viewer.cpp" />
+    <ClCompile Include="ViewerInteractor.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Viewer.h" />
+    <ClInclude Include="ViewerInteractor.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

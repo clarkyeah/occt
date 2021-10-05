@@ -1,0 +1,8 @@
+﻿  main.cpp
+c:\users\huat-wuxi001\documents\onedrive\hustwuxi\repos\code_repos\cppprojects\occt_skinning\occ_skinning_sample\occ_skinning_sample\main.cpp(41): warning C4101: “u1”: 未引用的局部变量
+c:\users\huat-wuxi001\documents\onedrive\hustwuxi\repos\code_repos\cppprojects\occt_skinning\occ_skinning_sample\occ_skinning_sample\main.cpp(41): warning C4101: “u0”: 未引用的局部变量
+  Viewer.cpp
+  ViewerInteractor.cpp
+  正在生成代码...
+    正在创建库 C:\Users\huat-wuxi001\Documents\OneDrive\HUSTWUXI\repos\code_repos\CppProjects\occt_skinning\occ_skinning_sample\x64\Debug\occ_skinning_sample.lib 和对象 C:\Users\huat-wuxi001\Documents\OneDrive\HUSTWUXI\repos\code_repos\CppProjects\occt_skinning\occ_skinning_sample\x64\Debug\occ_skinning_sample.exp
+  occ_skinning_sample.vcxproj -> C:\Users\huat-wuxi001\Documents\OneDrive\HUSTWUXI\repos\code_repos\CppProjects\occt_skinning\occ_skinning_sample\x64\Debug\occ_skinning_sample.exe
